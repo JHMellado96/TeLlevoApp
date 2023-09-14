@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Recuperar Contraseña</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Recuperar Contraseña</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div>
+    <img src="assets/images/Logo.png" alt="Logo">
+  </div>
+
+  <div>
+    <ion-title size="large">Ingresa tus datos correctamente:</ion-title>
+    <ion-title size="small">-</ion-title>
+    <ion-list>
+      <ion-list>
+
+        <ion-item>
+          <ion-input label="Nombre:" placeholder="Primer nombre"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input label="Apellido:" placeholder="Apellido Paterno"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-input label="Correo:" type="email" placeholder="email@duocuc.cl" helperText="Se deberá verificar el cambio por correo"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input label="Nueva Contraseña:" type="password" value="password" helperText="Se recomienda utilizar números y letras"></ion-input>
+        </ion-item>
+        
+      </ion-list>
+    </ion-list>
+
+    <ion-button (click)="navigateToHome()" expand="block" routerDirection="back">Restaurar</ion-button>
+    
+  </div>
+
+</ion-content>

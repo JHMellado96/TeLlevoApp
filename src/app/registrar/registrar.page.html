@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Registrarse</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Registrarse</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div>
+    <img src="assets/images/Logo.png" alt="Logo">
+  </div>
+
+  <div>
+    <ion-title size="large">Ingresa tus datos personales:</ion-title>
+    <ion-title size="small">...</ion-title>
+    <ion-list>
+      <ion-list>
+
+        <ion-item>
+          <ion-input label="Nombre:" placeholder="Primer nombre"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input label="Apellido:" placeholder="Apellido Paterno"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-input label="Correo:" type="email" placeholder="email@duocuc.cl" helperText="Correo institucional de DuocUC"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input label="Contraseña:" type="password" value="password" helperText="Se recomienda utilizar números y letras"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-select label="Tipo de Usuario:" placeholder="Seleccione una opción">
+            <ion-select-option value="admin">Conductor</ion-select-option>
+            <ion-select-option value="cliente">Pasajero</ion-select-option>
+          </ion-select>
+        </ion-item>
+        
+      </ion-list>
+    </ion-list>
+
+    <ion-button (click)="navigateToHome()" expand="block" routerDirection="back">Registrar</ion-button>
+    
+  </div>
+</ion-content>
